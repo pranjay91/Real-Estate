@@ -35,62 +35,51 @@ const List = ()=>{
             </div>
             <div className="right-section">
             <header>
-                <div className='userhead'>
-                    <span>USER ID: 06PPD125 </span>
-                    <span>User Name</span>
-                    {/* <img src={Logo} alt='insta-logo'></img>
-                   <Link to="/formpage"> <img src={Camera} alt='camera'></img></Link> */}
-                </div>
+                
+                    <div className="userhead">
+                        <span>USER ID:06PPD125</span>
+                        <span>username</span>
+                    </div>
+      
             </header>
             <hr/>
+            <div className="nav">
+            <input type="text" placeholder="Search PPD ID" />
+            <Link to="/basicInfo" ><button className="btn" >+ Add Property</button></Link>
             </div>
-            
-        <div className="content">
-        {/* {
-        postData.map((user,i) =>{
-            return (
-                <div className="post">
-                    <div className="user">
-                        <div>
-                            <div className="user-name" >
-                                <div key={i}>{user.author}</div>
-                            </div>
-                            <div className="user-loc">
-                                <span>{user.location}</span>
-                             </div>
-                        </div>
-                    
-                        <div>
-                           <b>...</b> 
-                        </div>
-                    </div>
-                    <div className="user-image">
-                        <img src={user.image} alt="user-postImage"></img>
-                    </div>
-                    <div className="user-meta">
-                        <div >
-                            <span>
-                            <img src={like} alt="user-postImage"></img>
-                            </span>
-                            <span>
-                            <img src={share} alt="user-postImage"></img>
-                            </span>
-                        </div>
-                        <div className="">
-                        <span>{user.date}</span>
-                         </div>
-                    </div>
-                    <div className="user-likes">
-                        0 likes
-                    </div>
-                    <div className="user-description">
-                        {user.desc}
-                    </div>
-                    </div>
+            <div className="list">
+                
+                <ul className="blue">
+                    <li>PPD ID</li>
+                    <li>Image</li>
+                    <li>Property</li>
+                    <li>Contact</li>
+                    <li>Area</li>
+                    <li>Views</li>
+                    <li>Status</li>
+                    <li>Day Left</li>
+                    <li>Action</li>
+                </ul>
+                {
+                 listData.map((user,i) =>{
+                  return (
+                    <ul>
+                        <li>{user.ppdId}</li>
+                        <li><img src={user.image} alt="" width="20" height="20"></img></li>
+                        <li>{user.property}</li>
+                        <li>{user.contact}</li>
+                        <li>{user.area}</li>
+                        <li>0</li>
+                        <li>Unsold</li>
+                        <li>00</li>
+                        <li>...</li>
+                    </ul>
                     )
                 })
-        } */}
-        </div>
+              }
+              
+            </div> 
+            </div>
         </div>
         </>
     )
