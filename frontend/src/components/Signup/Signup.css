@@ -1,0 +1,118 @@
+.signup-container{
+    height: 1024px;
+    width: 1440px;
+    position: relative;
+    background: #E1F9F4;
+}
+
+.signup-div{
+    height: 520px;
+    width: 564px;
+    border-radius: 10px;
+    position: absolute;
+    background: #FFFFFF;
+    margin-top:  90px;
+    margin-bottom:0px;
+    margin-left: 500px;
+    margin-right: 0px;
+}
+.signup-logo{
+    height: 18px;
+    width: 92px; 
+    margin-top: 20px;
+    margin-left: 230px;
+    margin-bottom: 50px;
+    border-radius: nullpx;
+position: absolute;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 18px;
+display: flex; 
+align-items: center;
+letter-spacing: 0.25px;
+justify-content: center;
+
+color: #4C57B6;
+}
+.signup-p{
+    height: 22px;
+width: 147px;
+
+margin-left: 220px;
+margin-top: 80px;
+margin-bottom: 80px;
+border-radius: nullpx;
+position: absolute;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.25px;
+color: #000000;
+opacity: 0.6;
+} 
+.mailId{
+    height: 54px;
+width: 450px;
+margin-top: 120px;
+margin-left: 55px;
+border-radius: 5px;
+
+}
+.password{
+    height: 54px;
+    width: 450px;
+    margin-top: 40px;
+    margin-left: 55px;
+    border-radius: 5px;
+}
+.ConfirmPassword{
+    height: 54px;
+    width: 450px;
+    margin-top: 40px;
+    margin-left: 55px;
+    border-radius: 5px; 
+}
+.signup-bt{
+    height: 54px;
+width: 450px;
+border-radius: 5px;
+margin-top: 40px;
+    margin-left: 55px;
+background: #4C57B6;
+color: white;
+position: absolute;
+
+}
+.signup-link{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    /* left: 583px;
+    top: 885px; */
+    margin: 160px;
+    margin-left: 740px;
+    margin-top: 650px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    color: #000000;
+    
+    opacity: 0.6;
+}
