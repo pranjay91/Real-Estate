@@ -19,27 +19,27 @@ const SideNavBar = () => {
                           <div><RiHome3Line /></div><div className='navvalue'>Property</div>
                     </div>
 
-                    <div className="sideoption">
+                    <div className="sideoption gray" >
                         <div><IoIosNotifications /></div>
                         <div className='navvalue' >Assistant</div>
                     </div>
 
-                    <div className="sideoption">
-                        <div><GrDownload /></div>
+                    <div className="sideoption gray">
+                        <div className="colorgray"><GrDownload /></div>
                         <div className='navvalue'>Received Interest</div>
                     </div>
 
-                    <div className="sideoption ">
-                        <div><GrUpload /></div>
+                    <div className="sideoption gray ">
+                        <div className="colorgray"><GrUpload /></div>
                         <div className='navvalue'>Sent Interest</div>
                     </div>
 
-                    <div className="sideoption">
+                    <div className="sideoption gray">
                         <div><GrFormView /></div>
                         <div className='navvalue'>Property View</div>
                     </div>
 
-                    <div className="sideoption">
+                    <div className="sideoption gray">
                         <div><BsFillTagFill /></div>
                         <div className='navvalue'>Traffic Plan</div>
 

@@ -27,7 +27,7 @@ const PropertyList = ( {propertydetails} )=>{
                       <tr className='tabledata'>
                           {/* <td className="tdtext">{propertydata._id.substr(propertydata._id.length - 7)}</td> */}
                           <td className="tdtext ppdidtxt">{propertydata._id}</td>
-                          <td className="tdtext"><FaRegImages /></td>
+                          <td className="tdtext tdtextimg" ><FaRegImages /></td>
                           <td className="tdtext">{propertydata.propertyType}</td>
                           <td className="tdtext tdmobile">{propertydata.mobile}</td>
                           <td className="tdtext">{propertydata.totalArea}</td>

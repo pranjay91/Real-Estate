@@ -11,14 +11,14 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 25px;
-    color:#AAAAAA;
+    color:#B4B4C6;
     }
     
     .dropdown {
         position: relative;
         display: inline-block;
         /* font-size: 20px; */
-        color: #AAAAAA;    
+        color:#B4B4C6;    
       }    
       
       .dropdown-content {
