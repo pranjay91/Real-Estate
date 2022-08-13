@@ -3,7 +3,7 @@
     padding: 0
 }
 
-.signupcontainer {
+.signup-container {
     display: grid;
     place-items: center;
     width: 100%;

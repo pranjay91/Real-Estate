@@ -3,6 +3,7 @@ import PropertyList from "../list/list";
 import { BsSearch ,BsPlus} from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
+import AddProperty from "../AddProperty/addProperty";
 
 
 const SearchRes = ({property})=>{
@@ -53,8 +54,7 @@ const SearchRes = ({property})=>{
               <button type="submit" className="isearchbtn" disabled={!isEnabled} onClick={() => handleSearch()} ><BsSearch className="btncolor"/></button>
             </div>
             <Link to='/addproperty'>
-              <button type='sumbit' className='addbtn' > 
-                    {/* onClick={AddProperty} */}
+              <button type='sumbit' className='addbtn'  onClick={AddProperty}>                  
                 <BsPlus /> Add Property
               </button></Link>
           </div>

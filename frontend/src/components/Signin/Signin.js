@@ -53,7 +53,7 @@ const Signin = () => {
     }
 
     return (
-        <div className="logincontainer">
+        <div className="signin-container">
             <div className="logbox">
                 <h1 className="logologin">Logo</h1>
                 <p className="paragraph2">Enter your credentials to access your account </p>
