@@ -48,7 +48,7 @@ const Signup = () => {
         navigate("/")
     }
     return (
-        <div className="signupcontainer">
+        <div className="signup-container">
             <div className="box">
                 <h1 className="logo">Logo</h1>
                 <p className="para">Create New Account</p>
