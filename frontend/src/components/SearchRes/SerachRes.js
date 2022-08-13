@@ -1,7 +1,6 @@
-import "./list/list.css"
-import PropertyList from "./list/list";
+import "./SearchRes.css"
+import PropertyList from "../list/list";
 import { BsSearch ,BsPlus} from "react-icons/bs";
-//import AddProperty from "./addProperty/addProperty";
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 

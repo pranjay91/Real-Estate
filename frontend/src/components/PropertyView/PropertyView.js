@@ -1,9 +1,8 @@
 import "./PropertyView.css"
-// import PropertyList from "./propertylist/PropertyList";
-import SideNavBar from "./sidenavbar/SideNavBar";
-import Header from "./headerpage/Header";
+import SideNavBar from "../sidenavbar/SideNavBar";
+import Header from "../headerpage/Header";
 import React, { useState, useEffect } from 'react';
-import SearchRes from './SerachRes';
+import SearchRes from '../SearchRes/SerachRes';
 const PropertyView = ()=>{
 
     const [property, setProperty] = useState([]);
@@ -11,7 +10,6 @@ const PropertyView = ()=>{
 
         useEffect(() => {
             async function fetchData() {
-            //const response = await fetch("http://localhost:3010/getProperty/",{
             const response = await fetch("http://localhost:3010/list",{
                 headers: {
                     authorization: authToken

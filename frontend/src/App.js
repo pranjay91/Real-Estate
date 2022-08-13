@@ -3,9 +3,7 @@ import Signup from "./components/Signup/Signup";
 import Signin from "./components/Signin/Signin";
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import './App.css';
-import PropertyView from './components/PropertyView';
-// import AddProperty from './components/AddProperty';
-//import AddProperty from "./components/addProperty/addProperty";
+import PropertyView from './components/PropertyView/PropertyView';
 import Logout from "./components/Logout/Logout";
 
 
