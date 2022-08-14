@@ -43,6 +43,18 @@ margin-left: 10px;
     background: #FFFFFF;
     column-gap: 1px;
 }
+.tabledata:hover{
+    display: flex;
+    flex-direction: row;  
+    border-radius:15px;
+    /* margin: 0px 30px; */
+    padding: 10px 0px;
+    /* height: 65px; */
+    margin-top: 8px;
+    align-items: center;
+    background: #eee8e2fc;
+    column-gap: 1px;
+}
 
 .ppdidtxt{ 
     width: 207px !important;

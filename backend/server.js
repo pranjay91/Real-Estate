@@ -39,8 +39,8 @@ app.listen(process.env.PORT || 3010, (err)=> {
 //     console.log(err)
 // })
 
-mongoose.connect("mongodb://localhost/realEstate", (data)=> {
-//mongoose.connect("mongodb+srv://pranjay:Pranjay91@@cluster0.mzmgp.mongodb.net/ecommerce?retryWrites=true&w=majority", (data)=> {
+//mongoose.connect("mongodb://localhost/realEstate", (data)=> {
+    mongoose.connect("mongodb+srv://pranjay:Pranjay9199@cluster0.mzmgp.mongodb.net/realEstateData?retryWrites=true&w=majority",()=>{
     console.log("Successfully connected to db");
 }, (err)=> {
     console.log(err)

@@ -74,7 +74,7 @@
     color: white;
     border-radius: 50px;
     margin: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 150px;
     border: none;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.22);
@@ -84,10 +84,10 @@
     color: white;
     border-radius: 50px;
     margin: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 150px;
     border: none;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.341);
 }
 
 .btn2 {
@@ -96,7 +96,7 @@
 }
 .btn2:hover {
     background-color:#30398b;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.341);
 }
 
 /* #camera{

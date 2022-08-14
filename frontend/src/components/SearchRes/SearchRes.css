@@ -53,3 +53,13 @@
     text-align: center;
     color: white;
 }
+.addbtn:hover{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    background: #4590d5;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.328);
+    border-style: none none none none;
+    text-align: center;
+    color: white;
+}

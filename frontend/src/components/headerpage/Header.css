@@ -12,14 +12,22 @@
     font-size: 17px;
     line-height: 25px;
     color:#B4B4C6;
-    }
+}
+    .userid:hover {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color:#9494a2;
+}
     
-    .dropdown {
+.dropdown {
         position: relative;
         display: inline-block;
         /* font-size: 20px; */
         color:#B4B4C6;    
-      }    
+} 
       
       .dropdown-content {
         display: none;
