@@ -8,30 +8,42 @@ const { checkExistinguser, generatePasswordHash } = require("./utility")
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs")
 require('dotenv').config(); //for setting environment variables on server
-
 const cors = require("cors");
-const corsOptions = {
-    origin: '*',
-    credentials: true,            //access-control-allow-credentials:true
-    optionSuccessStatus: 200,
-}
 
-app.use(cors(corsOptions))
+
+app.use(cors())
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+// const corsOptions = {
+//     origin: '*',
+//     credentials: true,            //access-control-allow-credentials:true
+//     optionSuccessStatus: 200,
+// }
+
+//app.use(cors(corsOptions))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
 
+// app.use(express.json({limit: "30mb", extended: true}))
+// app.use(express.urlencoded({extended:false}))
+// app.use(cors())
+
+
 //starting the server
-app.listen(process.env.PORT || 3010, (err)=> {
+app.listen(process.env.PORT || 3011, (err)=> {
     if(!err) {
-        console.log("Server started at port 3010")
+        console.log("Server started at port 3011")
     } else {
         console.log(err);
     }
 });
 
 
-//mongo db connection
+// //mongo db connection
 // const mongoDB = process.env.ATLAS_URI;
 // mongoose.connect(mongoDB, {}).then((res) => {
 //     console.log("connected to db")
@@ -40,7 +52,7 @@ app.listen(process.env.PORT || 3010, (err)=> {
 // })
 
 //mongoose.connect("mongodb://localhost/realEstate", (data)=> {
-    mongoose.connect("mongodb+srv://pranjay:Pranjay9199@cluster0.mzmgp.mongodb.net/realEstateData?retryWrites=true&w=majority",()=>{
+   mongoose.connect("mongodb+srv://pranjay:Pranjay9199@cluster0.mzmgp.mongodb.net/realEstateapp?retryWrites=true&w=majority",()=>{
     console.log("Successfully connected to db");
 }, (err)=> {
     console.log(err)
@@ -76,7 +88,7 @@ app.post("/signin", (req, res) => {
             bcrypt.compare(req.body.password, userData[0].password).then((val) => {
                 if (val) {
                     const authToken = jwt.sign(userData[0].email, process.env.SECRET_KEY);
-                    console.log(1)
+                    // console.log(1)
                     res.status(200).send({ authToken });
                 } else {
                     res.status(400).send("invalid password please enter correct password")
@@ -137,7 +149,7 @@ app.post('/add', (req, res) => {
         daysLeft: 10, //Defalt is 10
     })
     newProperty.save().then((data) => {
-        console.log('Property Added')
+       // console.log('Property Added')
         res.send('Property Added');
     }).catch(err => console.log(err));
 });

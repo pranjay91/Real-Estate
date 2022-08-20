@@ -5,6 +5,7 @@ import './Signup.css'
 import validator from 'validator'
 
 
+
 const Signup = () => {
     let navigate = useNavigate()
 
@@ -14,7 +15,8 @@ const Signup = () => {
     const handleSignup = () => {
         if (signupData.password === signupData.confirmpassword && signupData.password.length > 0 && signupData.email.length>0 && (validator.isEmail(signupData.email))) {
             axios({
-                url: "http://localhost:3010/signup",
+               // url: "http://localhost:3011/signup",
+               url: "https://real-estate-app-b.herokuapp.com/signup",
                 method: "POST",
                 headers: {
                 },
@@ -24,6 +26,7 @@ const Signup = () => {
             
                 alert(res.data)
                 navigate("/")
+                
                 
             }).catch((err) => {
                 

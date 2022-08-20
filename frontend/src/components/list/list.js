@@ -22,6 +22,7 @@ const PropertyList = ( {propertydetails} )=>{
                         <th className="thtext actiontxt">Action</th>
                     </tr>
                   </thead>
+                  <div className="listrow">
                       {propertydetails.map((propertydata) => (
                   <tbody>
                       <tr className='tabledata'>
@@ -43,10 +44,9 @@ const PropertyList = ( {propertydetails} )=>{
 
                             </td>
                         </tr>
-                  </tbody>
-              ))}      
-                           
-                
+                        </tbody>
+                         ))} 
+                  </div>             
               </table>
           </div>
        

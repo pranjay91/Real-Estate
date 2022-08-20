@@ -10,7 +10,9 @@ const PropertyView = ()=>{
 
         useEffect(() => {
             async function fetchData() {
-            const response = await fetch("http://localhost:3010/list",{
+             //const response = await fetch("http://localhost:3011/list/list",{
+               const response = await fetch("https://real-estate-app-b.herokuapp.com/list/list",{
+                method: "GET",
                 headers: {
                     authorization: authToken
                 }}); 
@@ -24,6 +26,7 @@ const PropertyView = ()=>{
         
         //console.log(property)
 
+        
     return(
         <>
        <div  className="maincontainer">

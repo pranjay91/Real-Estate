@@ -5,7 +5,7 @@ const signupModal = require("../models/signup-Modal");
 const  listModel=require("../models/list");
 
 
-router.get("/", (req, res) => {
+router.get("/list", (req, res) => {
 
     if (req.headers.authorization) {
         try {
@@ -37,10 +37,9 @@ router.get("/search/:id", (req, res) => {
         // console.log(propertyData)
         res.status(200).send(propertyData)
     }).catch(err=>{
-        console.log("error occured")
+        //console.log("error occured")
         res.status(400).send("no id matching with the entered id")
     })
-
 
 
     // if (req.headers.authorization) {

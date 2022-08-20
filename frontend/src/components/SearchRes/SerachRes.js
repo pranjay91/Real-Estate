@@ -1,5 +1,5 @@
 import "./SearchRes.css"
-import PropertyList from "../list/list";
+import List from "../list/list";
 import { BsSearch ,BsPlus} from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
@@ -30,7 +30,8 @@ const SearchRes = ({property})=>{
   const handleSearch = () => {
         // likecount=likecount+1
         // setLikeCount(likecount)
-        fetch(`http://localhost:3010/list/search/${addinput}`, {
+         //fetch(`http://localhost:3011/list/search/${addinput}`, {
+          fetch(`https://real-estate-app-b.herokuapp.com/list/search/${addinput}`, {
           method: "GET",
           headers: {
             "content-type": "application/json"
@@ -43,10 +44,8 @@ const SearchRes = ({property})=>{
           }).catch(err => console.log(err))
             
   }
- 
     return(
         <>
-
           <div className='seracharea'>
                     
             <div class="searchbtn">
@@ -59,7 +58,7 @@ const SearchRes = ({property})=>{
               </button></Link>
           </div>
                     
-          <div className="propertylstpart"> <PropertyList propertydetails= {issubmitted ?  updatedproperty : property} /></div>
+          <div className="propertylstpart"> <List propertydetails= {issubmitted ?  updatedproperty : property} /></div>
                     {/* <div className="propertylstpart"> <PropertyList propertydetails= {updatedproperty} /></div> */}
                     
         </>
